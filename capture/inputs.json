@@ -1,0 +1,20 @@
+{
+ "html-instead-of-json": "<!DOCTYPE html><html><body>Not Found</body></html>",
+ "empty-body": "",
+ "trailing-comma": "{\"name\": \"Ada\", \"age\": 36,}",
+ "single-quotes": "{'name': 'Ada'}",
+ "unquoted-key": "{name: \"Ada\"}",
+ "comment": "{\"a\": 1 // note\n}",
+ "nan": "{\"score\": NaN}",
+ "truncated": "{\"items\": [1, 2",
+ "bom": "﻿{\"a\": 1}",
+ "python-repr": "{'ok': True, 'value': None}",
+ "two-documents": "{\"a\": 1}\n{\"b\": 2}",
+ "raw-newline-in-string": "{\"text\": \"line one\nline two\"}",
+ "undefined": "{\"a\": undefined}",
+ "missing-comma": "{\"a\": 1 \"b\": 2}",
+ "object-object": "[object Object]",
+ "bad-escape": "{\"path\": \"C:\\Users\\ada\"}",
+ "undefined-text": "undefined",
+ "infinity": "{\"limit\": Infinity}"
+}

@@ -1,0 +1,233 @@
+input_id,input,runtime,engine,version,message
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Chrome 151,V8,151.0.7922.34,"Unexpected token '<', ""<!DOCTYPE ""... is not valid JSON"
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected character at line 1 column 1 of the JSON data
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Unrecognized token '<'
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Node 24,V8,24.21.0,"Unexpected token '<', ""<!DOCTYPE ""... is not valid JSON"
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Node 22,V8,22.23.3,"Unexpected token '<', ""<!DOCTYPE ""... is not valid JSON"
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Node 20,V8,20.20.2,"Unexpected token '<', ""<!DOCTYPE ""... is not valid JSON"
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Node 18,V8,18.20.8,Unexpected token < in JSON at position 0
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Bun,JavaScriptCore,1.4.2,JSON Parse error: Unrecognized token '<'
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+html-instead-of-json,<!DOCTYPE html><html><body>Not Found</body></html>,Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+empty-body,,Chrome 151,V8,151.0.7922.34,Unexpected end of JSON input
+empty-body,,Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+empty-body,,Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Unexpected EOF
+empty-body,,Node 24,V8,24.21.0,Unexpected end of JSON input
+empty-body,,Node 22,V8,22.23.3,Unexpected end of JSON input
+empty-body,,Node 20,V8,20.20.2,Unexpected end of JSON input
+empty-body,,Node 18,V8,18.20.8,Unexpected end of JSON input
+empty-body,,Bun,JavaScriptCore,1.4.2,JSON Parse error: Unexpected EOF
+empty-body,,Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+empty-body,,Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+empty-body,,Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Chrome 151,V8,151.0.7922.34,Expected double-quoted property name in JSON at position 26 (line 1 column 27)
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Firefox 153,SpiderMonkey,153.0,JSON.parse: expected double-quoted property name at line 1 column 27 of the JSON data
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Property name must be a string literal
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Node 24,V8,24.21.0,Expected double-quoted property name in JSON at position 26 (line 1 column 27)
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Node 22,V8,22.23.3,Expected double-quoted property name in JSON at position 26 (line 1 column 27)
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Node 20,V8,20.20.2,Expected double-quoted property name in JSON at position 26
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Node 18,V8,18.20.8,Unexpected token } in JSON at position 26
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Property name must be a string literal
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Illegal trailing comma before end of object: line 1 column 26 (char 25)
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 27 (char 26)
+trailing-comma,"{""name"": ""Ada"", ""age"": 36,}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 27 (char 26)
+single-quotes,{'name': 'Ada'},Chrome 151,V8,151.0.7922.34,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+single-quotes,{'name': 'Ada'},Firefox 153,SpiderMonkey,153.0,JSON.parse: expected property name or '}' at line 1 column 2 of the JSON data
+single-quotes,{'name': 'Ada'},Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Single quotes (') are not allowed in JSON
+single-quotes,{'name': 'Ada'},Node 24,V8,24.21.0,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+single-quotes,{'name': 'Ada'},Node 22,V8,22.23.3,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+single-quotes,{'name': 'Ada'},Node 20,V8,20.20.2,Expected property name or '}' in JSON at position 1
+single-quotes,{'name': 'Ada'},Node 18,V8,18.20.8,Unexpected token ' in JSON at position 1
+single-quotes,{'name': 'Ada'},Bun,JavaScriptCore,1.4.2,JSON Parse error: Single quotes (') are not allowed in JSON
+single-quotes,{'name': 'Ada'},Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+single-quotes,{'name': 'Ada'},Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+single-quotes,{'name': 'Ada'},Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+unquoted-key,"{name: ""Ada""}",Chrome 151,V8,151.0.7922.34,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+unquoted-key,"{name: ""Ada""}",Firefox 153,SpiderMonkey,153.0,JSON.parse: expected property name or '}' at line 1 column 2 of the JSON data
+unquoted-key,"{name: ""Ada""}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Expected '}'
+unquoted-key,"{name: ""Ada""}",Node 24,V8,24.21.0,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+unquoted-key,"{name: ""Ada""}",Node 22,V8,22.23.3,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+unquoted-key,"{name: ""Ada""}",Node 20,V8,20.20.2,Expected property name or '}' in JSON at position 1
+unquoted-key,"{name: ""Ada""}",Node 18,V8,18.20.8,Unexpected token n in JSON at position 1
+unquoted-key,"{name: ""Ada""}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Expected '}'
+unquoted-key,"{name: ""Ada""}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+unquoted-key,"{name: ""Ada""}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+unquoted-key,"{name: ""Ada""}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+comment,"{""a"": 1 // note
+}",Chrome 151,V8,151.0.7922.34,"Expected ',' or '}' after property value in JSON at position 8 (line 1 column 9)"
+comment,"{""a"": 1 // note
+}",Firefox 153,SpiderMonkey,153.0,"JSON.parse: expected ',' or '}' after property value in object at line 1 column 9 of the JSON data"
+comment,"{""a"": 1 // note
+}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Unrecognized token '/'
+comment,"{""a"": 1 // note
+}",Node 24,V8,24.21.0,"Expected ',' or '}' after property value in JSON at position 8 (line 1 column 9)"
+comment,"{""a"": 1 // note
+}",Node 22,V8,22.23.3,"Expected ',' or '}' after property value in JSON at position 8 (line 1 column 9)"
+comment,"{""a"": 1 // note
+}",Node 20,V8,20.20.2,"Expected ',' or '}' after property value in JSON at position 8"
+comment,"{""a"": 1 // note
+}",Node 18,V8,18.20.8,Unexpected token / in JSON at position 8
+comment,"{""a"": 1 // note
+}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Unrecognized token '/'
+comment,"{""a"": 1 // note
+}",Python 3.13,CPython json,3.13.16,"JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)"
+comment,"{""a"": 1 // note
+}",Python 3.12,CPython json,3.12.15,"JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)"
+comment,"{""a"": 1 // note
+}",Python 3.10,CPython json,3.10.22,"JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)"
+nan,"{""score"": NaN}",Chrome 151,V8,151.0.7922.34,"Unexpected token 'N', ""{""score"": NaN}"" is not valid JSON"
+nan,"{""score"": NaN}",Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected character at line 1 column 11 of the JSON data
+nan,"{""score"": NaN}",Safari 26 (WebKit),JavaScriptCore,26.5,"JSON Parse error: Unexpected identifier ""NaN"""
+nan,"{""score"": NaN}",Node 24,V8,24.21.0,"Unexpected token 'N', ""{""score"": NaN}"" is not valid JSON"
+nan,"{""score"": NaN}",Node 22,V8,22.23.3,"Unexpected token 'N', ""{""score"": NaN}"" is not valid JSON"
+nan,"{""score"": NaN}",Node 20,V8,20.20.2,"Unexpected token 'N', ""{""score"": NaN}"" is not valid JSON"
+nan,"{""score"": NaN}",Node 18,V8,18.20.8,Unexpected token N in JSON at position 10
+nan,"{""score"": NaN}",Bun,JavaScriptCore,1.4.2,"JSON Parse error: Unexpected identifier ""NaN"""
+nan,"{""score"": NaN}",Python 3.13,CPython json,3.13.16,
+nan,"{""score"": NaN}",Python 3.12,CPython json,3.12.15,
+nan,"{""score"": NaN}",Python 3.10,CPython json,3.10.22,
+truncated,"{""items"": [1, 2",Chrome 151,V8,151.0.7922.34,"Expected ',' or ']' after array element in JSON at position 15 (line 1 column 16)"
+truncated,"{""items"": [1, 2",Firefox 153,SpiderMonkey,153.0,"JSON.parse: end of data when ',' or ']' was expected at line 1 column 16 of the JSON data"
+truncated,"{""items"": [1, 2",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Expected ']'
+truncated,"{""items"": [1, 2",Node 24,V8,24.21.0,"Expected ',' or ']' after array element in JSON at position 15 (line 1 column 16)"
+truncated,"{""items"": [1, 2",Node 22,V8,22.23.3,"Expected ',' or ']' after array element in JSON at position 15 (line 1 column 16)"
+truncated,"{""items"": [1, 2",Node 20,V8,20.20.2,"Expected ',' or ']' after array element in JSON at position 15"
+truncated,"{""items"": [1, 2",Node 18,V8,18.20.8,Unexpected end of JSON input
+truncated,"{""items"": [1, 2",Bun,JavaScriptCore,1.4.2,JSON Parse error: Expected ']'
+truncated,"{""items"": [1, 2",Python 3.13,CPython json,3.13.16,"JSONDecodeError: Expecting ',' delimiter: line 1 column 16 (char 15)"
+truncated,"{""items"": [1, 2",Python 3.12,CPython json,3.12.15,"JSONDecodeError: Expecting ',' delimiter: line 1 column 16 (char 15)"
+truncated,"{""items"": [1, 2",Python 3.10,CPython json,3.10.22,"JSONDecodeError: Expecting ',' delimiter: line 1 column 16 (char 15)"
+bom,"﻿{""a"": 1}",Chrome 151,V8,151.0.7922.34,"Unexpected token '﻿', ""﻿{""a"": 1}"" is not valid JSON"
+bom,"﻿{""a"": 1}",Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected character at line 1 column 1 of the JSON data
+bom,"﻿{""a"": 1}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Unrecognized token '﻿'
+bom,"﻿{""a"": 1}",Node 24,V8,24.21.0,"Unexpected token '﻿', ""﻿{""a"": 1}"" is not valid JSON"
+bom,"﻿{""a"": 1}",Node 22,V8,22.23.3,"Unexpected token '﻿', ""﻿{""a"": 1}"" is not valid JSON"
+bom,"﻿{""a"": 1}",Node 20,V8,20.20.2,"Unexpected token '﻿', ""﻿{""a"": 1}"" is not valid JSON"
+bom,"﻿{""a"": 1}",Node 18,V8,18.20.8,Unexpected token ﻿ in JSON at position 0
+bom,"﻿{""a"": 1}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Unrecognized token '﻿'
+bom,"﻿{""a"": 1}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+bom,"﻿{""a"": 1}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+bom,"﻿{""a"": 1}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+python-repr,"{'ok': True, 'value': None}",Chrome 151,V8,151.0.7922.34,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+python-repr,"{'ok': True, 'value': None}",Firefox 153,SpiderMonkey,153.0,JSON.parse: expected property name or '}' at line 1 column 2 of the JSON data
+python-repr,"{'ok': True, 'value': None}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Single quotes (') are not allowed in JSON
+python-repr,"{'ok': True, 'value': None}",Node 24,V8,24.21.0,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+python-repr,"{'ok': True, 'value': None}",Node 22,V8,22.23.3,Expected property name or '}' in JSON at position 1 (line 1 column 2)
+python-repr,"{'ok': True, 'value': None}",Node 20,V8,20.20.2,Expected property name or '}' in JSON at position 1
+python-repr,"{'ok': True, 'value': None}",Node 18,V8,18.20.8,Unexpected token ' in JSON at position 1
+python-repr,"{'ok': True, 'value': None}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Single quotes (') are not allowed in JSON
+python-repr,"{'ok': True, 'value': None}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+python-repr,"{'ok': True, 'value': None}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+python-repr,"{'ok': True, 'value': None}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+two-documents,"{""a"": 1}
+{""b"": 2}",Chrome 151,V8,151.0.7922.34,Unexpected non-whitespace character after JSON at position 9 (line 2 column 1)
+two-documents,"{""a"": 1}
+{""b"": 2}",Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected non-whitespace character after JSON data at line 2 column 1 of the JSON data
+two-documents,"{""a"": 1}
+{""b"": 2}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Unable to parse JSON string
+two-documents,"{""a"": 1}
+{""b"": 2}",Node 24,V8,24.21.0,Unexpected non-whitespace character after JSON at position 9 (line 2 column 1)
+two-documents,"{""a"": 1}
+{""b"": 2}",Node 22,V8,22.23.3,Unexpected non-whitespace character after JSON at position 9 (line 2 column 1)
+two-documents,"{""a"": 1}
+{""b"": 2}",Node 20,V8,20.20.2,Unexpected non-whitespace character after JSON at position 9
+two-documents,"{""a"": 1}
+{""b"": 2}",Node 18,V8,18.20.8,Unexpected token { in JSON at position 9
+two-documents,"{""a"": 1}
+{""b"": 2}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Unable to parse JSON string
+two-documents,"{""a"": 1}
+{""b"": 2}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Extra data: line 2 column 1 (char 9)
+two-documents,"{""a"": 1}
+{""b"": 2}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Extra data: line 2 column 1 (char 9)
+two-documents,"{""a"": 1}
+{""b"": 2}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Extra data: line 2 column 1 (char 9)
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Chrome 151,V8,151.0.7922.34,Bad control character in string literal in JSON at position 18 (line 1 column 19)
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Firefox 153,SpiderMonkey,153.0,JSON.parse: bad control character in string literal at line 1 column 19 of the JSON data
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Unterminated string
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Node 24,V8,24.21.0,Bad control character in string literal in JSON at position 18 (line 1 column 19)
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Node 22,V8,22.23.3,Bad control character in string literal in JSON at position 18 (line 1 column 19)
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Node 20,V8,20.20.2,Bad control character in string literal in JSON at position 18
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Node 18,V8,18.20.8,"Unexpected token 
+ in JSON at position 18"
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Unterminated string
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Invalid control character at: line 1 column 19 (char 18)
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Invalid control character at: line 1 column 19 (char 18)
+raw-newline-in-string,"{""text"": ""line one
+line two""}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Invalid control character at: line 1 column 19 (char 18)
+undefined,"{""a"": undefined}",Chrome 151,V8,151.0.7922.34,"Unexpected token 'u', ""{""a"": undefined}"" is not valid JSON"
+undefined,"{""a"": undefined}",Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected character at line 1 column 7 of the JSON data
+undefined,"{""a"": undefined}",Safari 26 (WebKit),JavaScriptCore,26.5,"JSON Parse error: Unexpected identifier ""undefined"""
+undefined,"{""a"": undefined}",Node 24,V8,24.21.0,"Unexpected token 'u', ""{""a"": undefined}"" is not valid JSON"
+undefined,"{""a"": undefined}",Node 22,V8,22.23.3,"Unexpected token 'u', ""{""a"": undefined}"" is not valid JSON"
+undefined,"{""a"": undefined}",Node 20,V8,20.20.2,"Unexpected token 'u', ""{""a"": undefined}"" is not valid JSON"
+undefined,"{""a"": undefined}",Node 18,V8,18.20.8,Unexpected token u in JSON at position 6
+undefined,"{""a"": undefined}",Bun,JavaScriptCore,1.4.2,"JSON Parse error: Unexpected identifier ""undefined"""
+undefined,"{""a"": undefined}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting value: line 1 column 7 (char 6)
+undefined,"{""a"": undefined}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting value: line 1 column 7 (char 6)
+undefined,"{""a"": undefined}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting value: line 1 column 7 (char 6)
+missing-comma,"{""a"": 1 ""b"": 2}",Chrome 151,V8,151.0.7922.34,"Expected ',' or '}' after property value in JSON at position 8 (line 1 column 9)"
+missing-comma,"{""a"": 1 ""b"": 2}",Firefox 153,SpiderMonkey,153.0,"JSON.parse: expected ',' or '}' after property value in object at line 1 column 9 of the JSON data"
+missing-comma,"{""a"": 1 ""b"": 2}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Expected '}'
+missing-comma,"{""a"": 1 ""b"": 2}",Node 24,V8,24.21.0,"Expected ',' or '}' after property value in JSON at position 8 (line 1 column 9)"
+missing-comma,"{""a"": 1 ""b"": 2}",Node 22,V8,22.23.3,"Expected ',' or '}' after property value in JSON at position 8 (line 1 column 9)"
+missing-comma,"{""a"": 1 ""b"": 2}",Node 20,V8,20.20.2,"Expected ',' or '}' after property value in JSON at position 8"
+missing-comma,"{""a"": 1 ""b"": 2}",Node 18,V8,18.20.8,Unexpected string in JSON at position 8
+missing-comma,"{""a"": 1 ""b"": 2}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Expected '}'
+missing-comma,"{""a"": 1 ""b"": 2}",Python 3.13,CPython json,3.13.16,"JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)"
+missing-comma,"{""a"": 1 ""b"": 2}",Python 3.12,CPython json,3.12.15,"JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)"
+missing-comma,"{""a"": 1 ""b"": 2}",Python 3.10,CPython json,3.10.22,"JSONDecodeError: Expecting ',' delimiter: line 1 column 9 (char 8)"
+object-object,[object Object],Chrome 151,V8,151.0.7922.34,"""[object Object]"" is not valid JSON"
+object-object,[object Object],Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected character at line 1 column 2 of the JSON data
+object-object,[object Object],Safari 26 (WebKit),JavaScriptCore,26.5,"JSON Parse error: Unexpected identifier ""object"""
+object-object,[object Object],Node 24,V8,24.21.0,"""[object Object]"" is not valid JSON"
+object-object,[object Object],Node 22,V8,22.23.3,"""[object Object]"" is not valid JSON"
+object-object,[object Object],Node 20,V8,20.20.2,"""[object Object]"" is not valid JSON"
+object-object,[object Object],Node 18,V8,18.20.8,Unexpected token o in JSON at position 1
+object-object,[object Object],Bun,JavaScriptCore,1.4.2,"JSON Parse error: Unexpected identifier ""object"""
+object-object,[object Object],Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting value: line 1 column 2 (char 1)
+object-object,[object Object],Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting value: line 1 column 2 (char 1)
+object-object,[object Object],Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting value: line 1 column 2 (char 1)
+bad-escape,"{""path"": ""C:\Users\ada""}",Chrome 151,V8,151.0.7922.34,Bad escaped character in JSON at position 13 (line 1 column 14)
+bad-escape,"{""path"": ""C:\Users\ada""}",Firefox 153,SpiderMonkey,153.0,JSON.parse: bad escaped character at line 1 column 14 of the JSON data
+bad-escape,"{""path"": ""C:\Users\ada""}",Safari 26 (WebKit),JavaScriptCore,26.5,JSON Parse error: Invalid escape character U
+bad-escape,"{""path"": ""C:\Users\ada""}",Node 24,V8,24.21.0,Bad escaped character in JSON at position 13 (line 1 column 14)
+bad-escape,"{""path"": ""C:\Users\ada""}",Node 22,V8,22.23.3,Bad escaped character in JSON at position 13 (line 1 column 14)
+bad-escape,"{""path"": ""C:\Users\ada""}",Node 20,V8,20.20.2,Bad escaped character in JSON at position 13
+bad-escape,"{""path"": ""C:\Users\ada""}",Node 18,V8,18.20.8,Unexpected token U in JSON at position 13
+bad-escape,"{""path"": ""C:\Users\ada""}",Bun,JavaScriptCore,1.4.2,JSON Parse error: Invalid escape character U
+bad-escape,"{""path"": ""C:\Users\ada""}",Python 3.13,CPython json,3.13.16,JSONDecodeError: Invalid \escape: line 1 column 13 (char 12)
+bad-escape,"{""path"": ""C:\Users\ada""}",Python 3.12,CPython json,3.12.15,JSONDecodeError: Invalid \escape: line 1 column 13 (char 12)
+bad-escape,"{""path"": ""C:\Users\ada""}",Python 3.10,CPython json,3.10.22,JSONDecodeError: Invalid \escape: line 1 column 13 (char 12)
+undefined-text,undefined,Chrome 151,V8,151.0.7922.34,"""undefined"" is not valid JSON"
+undefined-text,undefined,Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected character at line 1 column 1 of the JSON data
+undefined-text,undefined,Safari 26 (WebKit),JavaScriptCore,26.5,"JSON Parse error: Unexpected identifier ""undefined"""
+undefined-text,undefined,Node 24,V8,24.21.0,"""undefined"" is not valid JSON"
+undefined-text,undefined,Node 22,V8,22.23.3,"""undefined"" is not valid JSON"
+undefined-text,undefined,Node 20,V8,20.20.2,"""undefined"" is not valid JSON"
+undefined-text,undefined,Node 18,V8,18.20.8,Unexpected token u in JSON at position 0
+undefined-text,undefined,Bun,JavaScriptCore,1.4.2,"JSON Parse error: Unexpected identifier ""undefined"""
+undefined-text,undefined,Python 3.13,CPython json,3.13.16,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+undefined-text,undefined,Python 3.12,CPython json,3.12.15,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+undefined-text,undefined,Python 3.10,CPython json,3.10.22,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+infinity,"{""limit"": Infinity}",Chrome 151,V8,151.0.7922.34,"Unexpected token 'I', ""{""limit"": Infinity}"" is not valid JSON"
+infinity,"{""limit"": Infinity}",Firefox 153,SpiderMonkey,153.0,JSON.parse: unexpected character at line 1 column 11 of the JSON data
+infinity,"{""limit"": Infinity}",Safari 26 (WebKit),JavaScriptCore,26.5,"JSON Parse error: Unexpected identifier ""Infinity"""
+infinity,"{""limit"": Infinity}",Node 24,V8,24.21.0,"Unexpected token 'I', ""{""limit"": Infinity}"" is not valid JSON"
+infinity,"{""limit"": Infinity}",Node 22,V8,22.23.3,"Unexpected token 'I', ""{""limit"": Infinity}"" is not valid JSON"
+infinity,"{""limit"": Infinity}",Node 20,V8,20.20.2,"Unexpected token 'I', ""{""limit"": Infinity}"" is not valid JSON"
+infinity,"{""limit"": Infinity}",Node 18,V8,18.20.8,Unexpected token I in JSON at position 10
+infinity,"{""limit"": Infinity}",Bun,JavaScriptCore,1.4.2,"JSON Parse error: Unexpected identifier ""Infinity"""
+infinity,"{""limit"": Infinity}",Python 3.13,CPython json,3.13.16,
+infinity,"{""limit"": Infinity}",Python 3.12,CPython json,3.12.15,
+infinity,"{""limit"": Infinity}",Python 3.10,CPython json,3.10.22,
